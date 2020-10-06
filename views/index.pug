@@ -1,0 +1,112 @@
+extends layout
+
+block content
+
+  main
+    .container
+      .row
+        .col.s12.center
+          h2.header Google Sheet Starter
+          a(href='https://docs.google.com/spreadsheets/d/12_6JeFDKeHHybI9GwPnPTxvmKNs5DBOZ29hQzsPIYf0/edit#gid=152787366' target='_blank') 試算表網址
+          p 試算表ID: 12_6JeFDKeHHybI9GwPnPTxvmKNs5DBOZ29hQzsPIYf0
+
+      .row.navtab-layout
+        
+        //content inner
+        .content__inner
+          
+          //tabs
+          .tabs
+
+            //tabs navigation
+            .tabs__nav
+
+              ul.tabs__nav-list
+                
+                li.tabs__nav-item.js-active Profile
+                li.tabs__nav-item Settings
+                li.tabs__nav-item About Us
+                li.tabs__nav-item FAQ
+                
+          
+            //tabs panels
+            .tabs__panels
+            
+              //single panel
+              .tabs__panel
+              
+                //.tabs__panel-card
+                //  .tabs__panel-avatar
+                //  .tabs__panel-content
+                //
+                //.tabs__panel-card
+                //  .tabs__panel-content
+                //  
+                //.tabs__panel-card
+                //  .tabs__panel-content
+                //    .row
+                .col.s12
+                  .row#gsheet-starter
+                    form.col.s12
+                      .row
+                        .input-field.col.s12
+                          i.material-icons.prefix account_circle
+                          input#first_name.validate(type='text')
+                          label(for='first_name') First Name
+                        .input-field.col.s12
+                          i.material-icons.prefix account_box
+                          input#last_name.validate(type='text')
+                          label(for='last_name') Last Name
+                      .row
+                        .input-field.col.s12
+                          i.material-icons.prefix phone
+                          input#phone.validate(type='tel')
+                          label(for='phone') Phone
+                        .input-field.col.s12
+                          i.material-icons.prefix mail
+                          input#email.validate(type='email')
+                          label(for='email') Email
+                      button.btn.waves-effect.waves-light(type='submit') Submit
+              
+              //single panel
+              .tabs__panel
+              
+                .tabs__panel-card
+                  .tabs__panel-content
+                  .tabs__panel-content
+                  
+                .tabs__panel-card
+                  .tabs__panel-content
+                  
+                .tabs__panel-card.tabs__panel-card--spaced-between
+                  .tabs__panel-img
+                  .tabs__panel-img
+                  .tabs__panel-img
+              
+              //single panel
+              .tabs__panel
+              
+                .tabs__panel-card
+                  .tabs__panel-content
+                  
+                .tabs__panel-card
+                  .tabs__panel-content
+                  .tabs__panel-img
+                  
+                .tabs__panel-card
+                  .tabs__panel-img
+                  .tabs__panel-content
+              
+              //single panel
+              .tabs__panel
+              
+                .tabs__panel-card
+                  .tabs__panel-content
+                  .tabs__panel-content
+                  
+                .tabs__panel-card
+                  .tabs__panel-content
+                  
+                .tabs__panel-card
+                  .tabs__panel-content
+                  .tabs__panel-content

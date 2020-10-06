@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+
+.vscode
+*.tmp
+
+node_modules/
+*.env
+.env/
+.data/

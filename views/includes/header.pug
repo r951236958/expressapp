@@ -1,0 +1,76 @@
+header
+  nav.top-nav.nav-extended.blue-grey.blue-grey.darken-4
+    .container
+      .nav-wrapper
+        .row
+          .col.s12.m10.offset-m1
+            h1.header Hello!
+  .container
+    a.top-nav.sidenav-trigger.full.hide-on-large-only(href='#' data-target='nav-mobile')
+      i.material-icons menu
+  .tab-content
+    // NavTabs
+    ul.tabs.tabs-transparent.blue-grey.darken-1
+      li.tab
+        a.active(href='#tab1') Tab 1
+      li.tab
+        a(href='#tab2') Tab 2
+      li.tab
+        a(href='#tab3') Tab 3
+  // Sidebar
+  .sidebar-container
+    ul#nav-mobile.sidenav.sidenav-fixed
+      li
+        .user-view.blue-grey.blue-grey.darken-4
+          a(href='#user')
+            i.material-icons.md-48.circle.white-text face
+          a(href='#name')
+            span.white-text.name User Name
+          a(href='#email')
+            span.white-text.email email@gmail.com
+          a(href='https://github.com/r951236958' target='_blank')
+            i.fab.fa-github.fa-2x
+      li
+        a(href='https://translate.google.com/?hl=zh-TW&tab=TT#view=home&op=translate&sl=auto&tl=zh-CN' target='_blank')
+          i.material-icons g_translate
+          | Google翻譯
+      li
+        a(href='https://docs.google.com/spreadsheets/d/1gzDP5JSYbjPs3ypXvHgZXDp7hbczR5l0OxVDBulMjG0' target='_blank')
+          i.material-icons today
+          | 日報
+      li
+        .divider
+      li
+        a.subheader Subheader
+      li
+        a.waves-effect(href='#!') Third Link With Waves
+      // Dropdown Trigger
+      li
+        a.dropdown-trigger(href='#' data-target='dropdown1')
+          i.fas.fa-robot.fa-fw(data-fa-symbol='robot')
+          | Google文件
+          i.material-icons.right arrow_drop_down
+        // Dropdown
+        ul#dropdown1.dropdown-content
+          li
+            a.subheader
+              i.fas.fa-robot.fa-fw
+              | Google文件
+          .divider
+          li
+            a(target='_blank' href='https://docs.google.com/spreadsheets/d/1gzDP5JSYbjPs3ypXvHgZXDp7hbczR5l0OxVDBulMjG0') 日報
+          li
+            a(target='_blank' href='https://docs.google.com/spreadsheets/d/1TV1tSV2tnblm0BzfWyUnQZnxxf-R3Cv_Q1-s01lJH9A') 案件進度
+          li
+            a(target='_blank' href='https://docs.google.com/spreadsheets/d/1mtz6488MHF6LxGPVro5X5qneZJt2Hv3SqLekWwwk0zw') 數據計算
+          li
+            a(target='_blank' href='https://docs.google.com/spreadsheets/d/18SWgCzsUB4rHSNl_qEe8OrlbmwGvqnZkv3wuKQznshY') 篩選總表
+          li
+            a(target='_blank' href='https://docs.google.com/spreadsheets/d/1BEgZRROTF-8GyU7KFfG0BT-Gkh1o9qJlzNECzQh14jI') 匯入處理
+          li
+            a(target='_blank' href='https://docs.google.com/spreadsheets/d/1k9zLpIV5fNq66qujBc8cWxpvCa2nTqWScxlTmowG7Ws') 採購部共用
+          li
+            a(target='_blank' href='https://docs.google.com/spreadsheets/d/1gqruDNC_8Dp3r5BEuD-lDiL8jlvb4rZMfvXWk1hrYHA') Jayden共用
+          .dropdown-divider
+          li
+            a(target='_blank' href='https://docs.google.com/document/d/1rxUeCFo3CkjF4Vj-GWdrom10mPnWe6_bKdR6CT_GjV8/edit') 常用批注詞
